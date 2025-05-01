@@ -10,7 +10,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Evita scroll horizontal */
+    overflow-x: hidden; 
 }
 
 body {
@@ -22,7 +22,7 @@ body {
 header {
     background-color: #004f80;
     display: flex;
-    padding: 10px 20%;
+    padding: 10px 5%;
     align-items: center;
     margin: auto;
     justify-content: space-between;
@@ -32,6 +32,13 @@ header {
     color: #fff;
     text-align: left;
     font-size: 30px;
+    font-weight: bold;
+    p {
+        font-size: 30px;
+        padding: 0px;
+        margin: 0px;
+        display: inline;
+    }
 }
 
 #logo-ufg {
@@ -46,55 +53,91 @@ main {
     background-color: rgb(255, 255, 255);
 }
 section{ 
-    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
     background-color:lightgray;
     padding: 20px;
     margin: auto;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     text-align: justify;
+    p { 
+        font-size: 2rem;
+        padding: 40px 10%;
+    }
 }
 
 #sobre {
     img {
-        display: block;
+        display: flex;
+        
         margin: 0;
-        height: 200px;
-    }
-    p { 
-        padding: 15px 5%;
+        height: 100%;
     }
 }
 
 #centralizadas{
+    width: 50%;
+    margin: auto;
     display: flex;
     justify-content: center; 
-    gap: 20px;
+    flex-direction: row;
     img {
-        height: 200px;
+         height: 500px;
+        border-radius: 50%;
+        border: 2px solid black;
+    }
+}
+
+#GitHubStats{
+    margin: 10px;
+    display: flex;
+    justify-content: center; 
+    flex-direction: row;
+    img {
+        height: 350px;
     } 
 }
 
 h2 {
     padding: 10px;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
 }
 
 
 form {  
+    border: 1px solid black;
     margin: auto;
     padding: 10px;
-    width:400px ;
+    width: 40% ;
     p{
         padding: 0px;
         margin: 10px;
     }   
     div{
         text-align: center;
+        label{
+            font-size: 2rem;
+        }
+        input[type="text"],
+        input[type="email"]
+        {
+            width: 60%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
     }
     textarea {
         width: 100%;
-        height: 100px;
+        height: 200px;
+        font-size: 1rem;
+    }
+    p {
+        font-size: 1.5rem;
+
     }
 }
 
