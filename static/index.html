@@ -3,61 +3,316 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sobre mim! </title>
+  <title>Victor Rangel - Engenheiro de Software</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-
-    <div id="nome"> Victor Rangel Tasse Magalhães | <p>Engenharia de Software</p></div>  
-    <img id="logo-ufg" src="https://files.cercomp.ufg.br/weby/up/1/o/UFG_branco.png" alt="Img da UFG_colorido.png">
-      
-  </header>
-  <main>
-    <section>
-      <h2>Sobre</h2>
-        <div id="sobre">
-          <div id="centralizadas">
-            <img src="https://media.licdn.com/dms/image/v2/D4D03AQGSPOa0Jp2pLA/profile-displayphoto-shrink_200_200/B4DZYCQxQaHAAY-/0/1743794673888?e=2147483647&v=beta&t=KCDoGDLp6c9fhXdS-KwDyVuVNxUkSFff79dVDj-Co1E" alt="">
-          </div> 
-            <div id="GitHubStats">
-              <img
-                alt="GitHub Stats"
-                height="190"
-                src="https://github-readme-stats.vercel.app/api?username=Rangelzin&show_icons=true&theme=tokyonight&include_all_commits=true"
-              >
-              <img
-                alt="GitHub Stats"
-                height="190"
-                src="https://github-readme-stats.vercel.app/api/top-langs/?username=Rangelzin&theme=tokyonight&layout=compact"
-              >
-            </div>
-        </div>
-        <p>Sou um Engenheiro de Software, quero contribuir com conhecimento em tecnologias a fim de garantir o futuro da internet para um planeta mais moderno e justo, sou entusiasta na área e pretendo me atualizar todos os dias com novas tecnologias! Além disso, desejo corroborar com habilidades de, liderança, proatividade, raciocínio logico, cálculo matemático e lógicas para melhorar o ambiente de trabalho!</p> 
-      <h2>Projetos</h2> 
-
-    <h2>Contato</h2>
-  
-    <form>
-      <p>Gostaria de entrar em contato? </p>
-      <div>
-        <p>
-          <label>Seu Nome: </label> 
-          <input type="text">   
-        </p>    
-        <p> 
-          <label>Seu Email: </label> 
-          <input type="email"> 
-        </p>   
+    <div class="cabecalho">
+      <div class="nome">
+        <h1>Victor Rangel Tasse Magalhães</h1>
+        <span class="separador">|</span>
+        <p>Engenharia de Software</p>
       </div>
-        <p>Mensagem</p>
-        <textarea id="msg"></textarea>     
-      <input id="butao" type="submit" value="Enviar">
-    </form>
+      <a href="https://ufg.br/" target="_blank" class="logo-link">
+        <img src="https://files.cercomp.ufg.br/weby/up/1/o/UFG_branco.png" alt="Logo UFG" class="logo-ufg">
+      </a>
+    </div>
+    <nav class="menu">
+      <a href="#sobre" class="menu-item">Sobre</a>
+      <a href="#projetos" class="menu-item">Projetos</a>
+      <a href="#contato" class="menu-item">Contato</a>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="sobre" class="secao">
+      <h2>Sobre</h2>
+      <div class="sobre-container">
+        <div class="foto-perfil-container">
+          <img src="https://media.licdn.com/dms/image/v2/D4D03AQGSPOa0Jp2pLA/profile-displayphoto-shrink_200_200/B4DZYCQxQaHAAY-/0/1743794673888?e=2147483647&v=beta&t=KCDoGDLp6c9fhXdS-KwDyVuVNxUkSFff79dVDj-Co1E" 
+               alt="Foto de Victor Rangel" 
+               class="foto-perfil">
+        </div>
+        <div class="github-stats">
+          <div class="github-card" id="github-card-1">
+            <img src="https://github-readme-stats.vercel.app/api?username=Rangelzin&show_icons=true&theme=tokyonight&include_all_commits=true" 
+                 alt="Estatísticas GitHub">
+          </div>
+          <div class="github-card" >
+            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Rangelzin&theme=tokyonight&layout=compact" 
+                 alt="Linguagens mais usadas">
+          </div>
+        </div>
+      </div>
+      <div class="texto-sobre">
+        <p>Sou um Engenheiro de Software, quero contribuir com conhecimento em tecnologias a fim de garantir o futuro da internet para um planeta mais moderno e justo, sou entusiasta na área e pretendo me atualizar todos os dias com novas tecnologias! Além disso, desejo corroborar com habilidades de liderança, proatividade, raciocínio lógico, cálculo matemático e lógicas para melhorar o ambiente de trabalho!</p>
+      </div>
+    </section>
+
+    <section id="projetos" class="secao">
+      <h2>Projetos</h2>
+      <div class="projetos-container">
+        <div class="projeto-card">
+          <div class="projeto-imagem-container">
+            <img src="assets/ProjetoAndroid.png" alt="ProjetoAndroid.png" class="projeto-imagem">
+            <span class="projeto-badge badge-completo">Completo</span>
+          </div>
+          
+          <div class="projeto-conteudo">
+            <h3 class="projeto-titulo">Projeto Site Temático Android</h3>
+            <div class="projeto-metadata">
+              <span class="projeto-data">Out de 2024 - Nov de 2024</span>
+              <span class="projeto-status status-completo">Completo</span>
+            </div>
+            
+            <p class="projeto-descricao">Desenvolvi uma página de apresentação para o Android, focada em destacar suas principais funcionalidades e design. Este projeto foi criado como parte dos meus estudos em HTML e CSS, com o objetivo de praticar a criação de layouts responsivos e atraentes</p>
+            
+            <div class="projeto-tecnologias">
+              <span class="tecnologia-badge">HTML</span>
+              <span class="tecnologia-badge">CSS</span>
+            </div>
+            
+            <div class="projeto-links">
+              <a href="https://rangelzin.github.io/PortfolioHTML-CSS/html-css/projeto-android/android.html" class="projeto-link" target="_blank">
+                <i>🔗</i> Demo
+              </a>
+              <a href="https://github.com/Rangelzin/PortfolioHTML-CSS/tree/main/html-css/projeto-android" class="projeto-link" target="_blank">
+                <i>💻</i> Código
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="projeto-card">
+          <div class="projeto-imagem-container">
+            <img src="assets/ProjetoSocial.png" alt="ProjetoSocial.png" class="projeto-imagem">
+            <span class="projeto-badge badge-completo">Completo</span>
+          </div>
+          
+          <div class="projeto-conteudo">
+            <h3 class="projeto-titulo">Projeto Site Social</h3>
+            <div class="projeto-metadata">
+              <span class="projeto-data">Dez de 2024</span>
+              <span class="projeto-status status-completo">Completo</span>
+            </div>
+            
+            <p class="projeto-descricao">Desenvolvi uma página web com foco em promover ações sociais e conectar comunidades a oportunidades de impacto positivo. Este projeto demonstra habilidades em design responsivo e boas práticas de desenvolvimento front-end.</p>
+            
+            <div class="projeto-tecnologias">
+              <span class="tecnologia-badge">HTML</span>
+              <span class="tecnologia-badge">CSS</span>
+            </div>
+            
+            <div class="projeto-links">
+              <a href="https://rangelzin.github.io/PortfolioHTML-CSS/html-css/projeto-social/social.html" class="projeto-link" target="_blank">
+                <i>🔗</i> Demo
+              </a>
+              <a href="https://github.com/Rangelzin/PortfolioHTML-CSS/tree/main/html-css/projeto-social" class="projeto-link" target="_blank">
+                <i>💻</i> Código
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="projeto-card">
+          <div class="projeto-imagem-container">
+            <img src="assets/ProjetoCordel.png" alt="ProjetoCordel.png" class="projeto-imagem">
+            <span class="projeto-badge badge-completo">Completo</span>
+          </div>
+          
+          <div class="projeto-conteudo">
+            <h3 class="projeto-titulo">Projeto Site Cordel Literário</h3>
+            <div class="projeto-metadata">
+              <span class="projeto-data">Nov de 2024 - Dez de 2024</span>
+              <span class="projeto-status status-completo">Completo</span>
+            </div>
+            
+            <p class="projeto-descricao">Desenvolvi um projeto inspirado na rica cultura da literatura de cordel, utilizando HTML e CSS para criar uma página visualmente encantadora e fiel ao estilo clássico dessa arte.</p>
+            <p class="projeto-descricao">Design responsivo que garante uma ótima experiência em diferentes dispositivos, uma homenagem visual e cultural à literatura brasileira, destacando sua importância e beleza.</p>
+
+            
+            <div class="projeto-tecnologias">
+              <span class="tecnologia-badge">HTML</span>
+              <span class="tecnologia-badge">CSS</span>
+            </div>
+            
+            <div class="projeto-links">
+              <a href="https://rangelzin.github.io/PortfolioHTML-CSS/html-css/projeto-cordel/projeto-cordel.html" class="projeto-link" target="_blank">
+                <i>🔗</i> Demo
+              </a>
+              <a href="https://github.com/Rangelzin/PortfolioHTML-CSS/tree/main/html-css/projeto-cordel" class="projeto-link" target="_blank">
+                <i>💻</i> Código
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="projeto-card">
+          <div class="projeto-imagem-container">
+            <img src="assets/ProjetoLogin.png" alt="ProjetoLogin.png" class="projeto-imagem">
+            <span class="projeto-badge badge-completo">Completo</span>
+          </div>
+          
+          <div class="projeto-conteudo">
+            <h3 class="projeto-titulo">Projeto Site Login Responsivo</h3>
+            <div class="projeto-metadata">
+              <span class="projeto-data">Dez de 2024 - Jan de 2025</span>
+              <span class="projeto-status status-completo">Completo</span>
+            </div>
+            
+            <p class="projeto-descricao">
+              Desenvolvi uma interface de login elegante e funcional como parte dos meus estudos em HTML e CSS, destacando-se por diversas habilidades adquiridas durante o processo de aprendizado.
+                O projeto inclui:
+                Design Responsivo, adaptado para diferentes tamanhos de tela.
+
+                Estilização Personalizada utilizando apenas CSS.
+
+                Estrutura Semântica, garantindo código organizado e otimizado.
+
+                Funcionalidades incluem campos para e-mail e senha com botões estilizados.
+
+                Preparado para implementações futuras, como integração com back-end.
+          
+            </p>
+        
+            <div class="projeto-tecnologias">
+              <span class="tecnologia-badge">HTML</span>
+              <span class="tecnologia-badge">CSS</span>
+            </div>
+            
+            <div class="projeto-links">
+              <a href="https://rangelzin.github.io/PortfolioHTML-CSS/html-css/projeto-login/login.html" class="projeto-link" target="_blank">
+                <i>🔗</i> Demo
+              </a>
+              <a href="https://github.com/Rangelzin/PortfolioHTML-CSS/tree/main/html-css/projeto-login" class="projeto-link" target="_blank">
+                <i>💻</i> Código
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="projeto-card">
+          <div class="projeto-imagem-container">
+            <img src="assets/ProjetoSpotify.png" alt="ProjetoSpotify.png" class="projeto-imagem">
+            <span class="projeto-badge badge-completo">Completo</span>
+          </div>
+          
+          <div class="projeto-conteudo">
+            <h3 class="projeto-titulo">Projeto Clone Site Spotify 2020</h3>
+            <div class="projeto-metadata">
+              <span class="projeto-data">Jan de 2025</span>
+              <span class="projeto-status status-completo">Completo</span>
+            </div>
+            
+            <p class="projeto-descricao">
+              Desenvolvi um clone da interface do Spotify (2020) como parte dos meus estudos em desenvolvimento front-end. O objetivo foi aprimorar minhas habilidades em HTML,TailwindCSS e CSS, recriando a experiência visual da plataforma de streaming de música.
+            </p>
+        
+            <div class="projeto-tecnologias">
+              <span class="tecnologia-badge">HTML</span>
+              <span class="tecnologia-badge">Tailwind CSS</span>
+            </div>
+            
+            <div class="projeto-links">
+              <a href="https://rangelzin.github.io/Clone-Spotify-2020/src/indexSPOTIFY.html" class="projeto-link" target="_blank">
+                <i>🔗</i> Demo
+              </a>
+              <a href="https://github.com/Rangelzin/Clone-Spotify-2020" class="projeto-link" target="_blank">
+                <i>💻</i> Código
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="projeto-card">
+          <div class="projeto-imagem-container">
+            <img src="assets/ProjetoFacebook.png" alt="ProjetoFacebook.png" class="projeto-imagem">
+            <span class="projeto-badge badge-completo">Completo</span>
+          </div>
+          
+          <div class="projeto-conteudo">
+            <h3 class="projeto-titulo">Projeto Clone Site Facebook 2020</h3>
+            <div class="projeto-metadata">
+              <span class="projeto-data">Jan de 2025</span>
+              <span class="projeto-status status-completo">Completo</span>
+            </div>
+            
+            <p class="projeto-descricao">
+              Desenvolvi um clone da interface do Facebook de 2020, recriando o layout clássico da rede social com fidelidade ao design original. O projeto foi construído com foco em responsividade e organização do código, garantindo uma experiência visual agradável em diferentes dispositivos.
+            </p>
+        
+            <div class="projeto-tecnologias">
+              <span class="tecnologia-badge">HTML</span>
+              <span class="tecnologia-badge">Tailwind CSS</span>
+            </div>
+            
+            <div class="projeto-links">
+              <a href="https://rangelzin.github.io/Clone-Facebook-2020/src/indexFACEBOOK.html" class="projeto-link" target="_blank">
+                <i>🔗</i> Demo
+              </a>
+              <a href="https://github.com/Rangelzin/Clone-Facebook-2020" class="projeto-link" target="_blank">
+                <i>💻</i> Código
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="projeto-card">
+          <div class="projeto-imagem-container">
+            <img src="assets/ProjetoAmazon.png" alt="ProjetoAmazon.png" class="projeto-imagem">
+            <span class="projeto-badge badge-completo">Completo</span>
+          </div>
+          
+          <div class="projeto-conteudo">
+            <h3 class="projeto-titulo">Projeto Clone Site Amazon 2020</h3>
+            <div class="projeto-metadata">
+              <span class="projeto-data">Jan de 2025</span>
+              <span class="projeto-status status-completo">Completo</span>
+            </div>
+            
+            <p class="projeto-descricao">
+              Este projeto é um clone da interface da Amazon de 2020, desenvolvido apenas com HTML e Tailwind CSS. O objetivo foi praticar estilização com classes utilitárias e criar um layout responsivo sem o uso de JavaScript ou frameworks adicionais.
+            </p>
+        
+            <div class="projeto-tecnologias">
+              <span class="tecnologia-badge">HTML</span>
+              <span class="tecnologia-badge">Tailwind CSS</span>
+            </div>
+            
+            <div class="projeto-links">
+              <a href="https://rangelzin.github.io/Clone-Amazon-2020/src/indexAMAZON.html" class="projeto-link" target="_blank">
+                <i>🔗</i> Demo
+              </a>
+              <a href="https://github.com/Rangelzin/Clone-Amazon-2020" class="projeto-link" target="_blank">
+                <i>💻</i> Código
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contato" class="secao">
+      <h2>Contato</h2>
+      <form class="form-contato">
+        <p class="form-titulo">Gostaria de entrar em contato?</p>
+        
+        <div class="form-group">
+          <label for="nome">Seu Nome:</label>
+          <input type="text" id="nome" name="nome" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Seu Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" required></textarea>
+        </div>
+        
+        <button type="submit" class="botao-enviar">Enviar Mensagem</button>
+      </form>
     </section>
   </main>
+
   <footer>
-    <p>Copyright by Victor Rangel &copy;</p>
+    <p>&copy; Copyright by Victor Rangel</p>
   </footer>
 </body>
 </html>
